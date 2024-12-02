@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Heebo; */
+    direction: rtl;
+    font-family: Heebo;
+}
+
+.formContainer {
+    margin-right: 10VW;
+    margin-top: 50px;
+    height: 60vh;
+    align-items: center;
+    display: flex;
+    color: #FDBD03;
+
+}
+
+.form {
+    margin-right: 10vw;
+    margin-top: 60px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    color: #FDBD03;
+    width: 40vw;
+}
+
+h1 {
+    text-align: right;
+    color: #FDBD03;
+    font-size: 4rem;
+    font: normal normal 900 Heebo;
+    
+}
+
+.formContainer .form p {
+    align-self: flex-start;
+    font-size: 1rem;
+    width: 385px;
+    color: #020253;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.formContainer .form form div label {
+    font-size: 1rem;
+    color: #020253;
+}
+
+.formContainer .form form div input,
+.formContainer .form form div textarea {
+    background-color: #E5EEFF;
+    border: 0;
+    border-bottom: solid #FDBD03 4px;
+    height: 40px;
+    width: 100%;
+}
+
+.email,
+.name {
+    width: 48%;
+}
+
+.contact {
+    display: flex;
+    border: #03eeff 50px;
+    background-color: #fff;
+
+    justify-content: space-between;
+
+}
+
+.formContainer .form form .name input {
+    width: 100%;
+}
+
+.formContainer .form form .email input {
+    width: 100%;
+}
+
+.formContainer .form .form form {
+    border-radius: 4px;
+}
+
+.formContainer .form form {
+    width: 40vw;
+}
+
+
+.formContainer .form form .text textarea {
+    height: 100px;
+    align-self: flex-end;
+    justify-self: self-start;
+    text-align: start;
+}
+
+.formContainer .form form input[type="submit"] {
+    align-self: center;
+    background-color: #FDBD03;
+    color: black;
+    width: 140px;
+    height: 45px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.formContainer .phone img {
+    margin-top: 100px;
+    height: 70vh;
+}
+
+
+
+.formContainer .form form div {
+    flex-direction: row;
+}
+
+.whatsappIcon {
+    
+    /* background: #FDBD03; */
+    width: 85px;
+    height: 85px;
+    background-color: #FDBD03;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    
+}
+.whatsappIcon img{
+    
+    
+    top: 20px;
+    left: 20px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.yellowLine1{
+    width: 20vw;
+    height: 1.5vh;
+    background: #FDBD03;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.iconsList {
+
+    display: flex;
+    justify-content: left;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    align-items: end;
+    
+    
+}
+.iconsList li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #FDBD03;
+    list-style-type: none;
+    width: 95px;
+    height: 95px;
+    margin: 1vw;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.192);
+    
+}
+
+.iconsList li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.iconsList li img[src*=voice-call],.iconsList li img[src*=instagram]{
+    width: 50px;
+    height: 50px;
+}
+.yellowLine2 {
+    position: absolute;
+    bottom: 0;
+    width: 40vw;
+    height: 1.5vh;
+    background: #FDBD03;
+    margin-bottom: 0;
+}
+/* media 990 */
+@media (max-width: 576px){
+    .formContainer{
+        flex-direction: column;
+        
+    }
+    /* .phone {
+        height: 40vh;
+        
+    } */
+    .formContainer .phone img{
+    height: 120px;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 1.9rem;
+        margin: 0 auto;
+}
+    
+    .formContainer .form p{
+        font-size: 0.8rem;
+        text-align: center;
+        width: 100%;
+    }
+    .form, .formContainer{
+        margin: 0 auto;
+        
+    }
+    .contact{
+        display: block;
+    }
+    .formContainer .form form{
+        width: 90vw;
+        align-self: center;
+    }
+    .formContainer .form form div,.formContainer .form form input[type="submit"],
+    .formContainer .form h1{
+        width: 100%;
+    }
+    
+.formContainer .form h1{
+    text-align: center;
+}
+.yellowLine1{
+    width: 60vw;
+}
+.yellowLine2{
+    width: 100vw;
+}
+.iconsList li{
+    width: 40px;
+    height: 40px;
+    /* margin-right: 1rem; */
+}
+.iconsList{
+    height: 300px;  
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    height: 150px;
+
+}
+.iconsList li img{
+    width: 16px;
+    height: 16px;
+}
+.iconsList li img[src*=voice-call],
+.iconsList li img[src*=instagram] {
+    width: 25px;
+    height: 25px;
+}
+.whatsappIcon{
+    display: none;
+
+}
+.contact{
+    flex-direction: row;
+}
+.formContainer{
+    height: 600px;
+}
+}
+
+
+

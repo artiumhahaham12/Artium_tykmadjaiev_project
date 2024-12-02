@@ -1,0 +1,47 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #0EE1E1;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 180px;
+
+
+    }
+
+    .heroText{
+        margin-right: 100px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+    }
+
+}
+.whatsapp{
+    box-shadow: 0 3px 6px #00000029;
+    background-color: #ffff;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+    width: 25px;
+    }
+    
+}

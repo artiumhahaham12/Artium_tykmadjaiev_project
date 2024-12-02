@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Heebo;
+  direction: rtl;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #0EE1E1;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  width: 180px;
+}
+header .heroText {
+  margin-right: 100px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+header .heroText h1 {
+  font-size: 2rem;
+}
+header .heroText p {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.whatsapp {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whatsapp img {
+  width: 25px;
+}
+
+.serviceList {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+.serviceList .item {
+  text-align: center;
+  background-color: #F8F8F8;
+  width: 23%;
+  height: 320px;
+  padding: 40px;
+}
+.serviceList .item li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13%;
+}
+.serviceList .item img {
+  margin-top: 20px;
+  width: 47px;
+}
+.serviceList .item h2 {
+  margin-top: 20px;
+  font-size: 1.7rem;
+  color: #0EE1E1;
+  font-weight: bold;
+}
+.serviceList .item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.map {
+  width: 56vw;
+}
+.map img {
+  border: 73px #0EE1E1 solid;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  background-color: #F0FFFF;
+}
+
+.form {
+  margin: 0 auto;
+  width: 420px;
+}
+.form h2 {
+  width: 100%;
+  margin-top: 250px;
+  font-size: 2.5rem;
+}
+.form p {
+  text-align: right;
+}
+.form form {
+  width: 100%;
+}
+.form form .inputTextControl {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.form form div label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.form form div input, .form form div textarea {
+  height: 50px;
+  width: 100%;
+  background-color: #E5EEFF;
+  border-bottom: #0EE1E1 solid 4px;
+}
+.form form div textarea {
+  height: 150px;
+}
+.form form input[type=submit] {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #0EE1E1;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.iconsList {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconsList li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #0EE1E1;
+  list-style-type: none;
+  width: 80px;
+  height: 80px;
+  margin: 1vw;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.192);
+}
+
+.iconsList li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.iconsList li img[src*=voice-call],
+.iconsList li img[src*=instagram] {
+  width: 50px;
+  height: 50px;
+}
+
+.bottom-line {
+  margin-bottom: 0;
+  background-color: #0EE1E1;
+  height: 20px;
+  width: 100vw;
+}
+
+@media (max-width: 1140px) {
+  .form {
+    width: 300px;
+  }
+  .form h2 {
+    margin-top: 20px;
+  }
+  .main {
+    height: 600px;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    height: 350px;
+    flex-direction: column;
+    background-color: #0EE1E1;
+  }
+  header .image-box {
+    width: 320px;
+    margin-right: 0;
+  }
+  header img {
+    text-align: right;
+    width: 60px;
+  }
+  header .heroText {
+    width: 300px;
+    margin-right: 0;
+  }
+  header .heroText p {
+    font-size: 0.8rem;
+  }
+  .whatsapp {
+    display: none;
+  }
+  .serviceList {
+    flex-direction: column;
+  }
+  .serviceList .item {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90vw;
+  }
+  .main {
+    height: 1000px;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .main .map {
+    width: 100vw;
+  }
+  .main .map img {
+    border: 32px solid #0EE1E1;
+  }
+  .iconsList li {
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+  }
+  .iconsList li img {
+    width: 15px;
+    height: 15px;
+  }
+  .iconsList li img[src*=voice-call],
+  .iconsList li img[src*=instagram] {
+    width: 30px;
+    height: 50px;
+  }
+  .bottom-line {
+    height: 10.25px;
+  }
+}/*# sourceMappingURL=projectFive.css.map */

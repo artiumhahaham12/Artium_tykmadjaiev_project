@@ -1,0 +1,40 @@
+.serviceList{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100vw;
+
+    justify-content: space-evenly;
+    .item{
+        text-align: center;
+        background-color: #F8F8F8;
+        width: 23%;
+        height: 320px;
+        padding: 40px;
+        li{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 13%;
+        }
+        img{
+            margin-top: 20px;
+            width: 47px;
+        }
+        h2{
+            margin-top: 20px;
+            font-size: 1.7rem;
+            color: #0EE1E1;
+            font-weight: bold;
+        }
+        p{
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            
+        }
+    }
+}

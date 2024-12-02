@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <title>My Accont</title>
+</head>
+<body>
+    <h1 class="display-3 text-primary text-center mb-md-5 mb-sm-1">MY<i class="fa-solid fa-chart-pie text-secondary "></i>ACOUNT</h1>
+    <div id="balance" class="text-center bg-secondary p-3 m-3 rounded text-light fs-4 ">Balance: <span id="sum">0</span></div>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-sm-4">
+          <!-- form -->
+          <select class="form-select" aria-label="Default select example" id="type">
+            <option selected value="income">Income</option>
+            <option value="expense">Exepnse</option>
+          </select>
+          <div class="form-floating my-3">
+            <input
+              type="text"
+              class="form-control"
+              id="description"
+              placeholder="Description"
+            />
+            <label for="description">Description</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="amount"
+              placeholder="0"
+            />
+            <label for="amount">Amount</label>
+          </div>
+          <button class="btn btn-primary w-100 mt-3" onclick="addAction()">Add</button>
+        </div>
+
+            <div class="col-md-8 col-sm-12">
+                <table class="table" id="main-table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="col-5">Descrption</th>
+                        <th scope="col" class="col-5">Amount</th>
+                        <th scope="col" class="col-3">Date</th>
+                        <th scope="col" class="col-1">Time</th>
+                        <th scope="col" class="col-1"></th>
+                        
+                        
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                
+                <!-- <tr>
+                    
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <button class="text-danger bg-light border-0">
+                        
+                    <td class="text-end">
+                        <button class="text-danger bg-light border-0">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                    </td>
+                    <td class="text-end">
+                        <button class="text-danger bg-light border-0">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button></td>
+                </tr> -->
+                
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+    
+    <div class="modal" id="edit-form">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-down">
+            <div class="modal-content">
+                <div class="col-sm-10 m-0 m-auto my-4">
+                    <!-- form -->
+                    <select class="form-select" aria-label="Default select example" id="type-edit">
+                        <option selected value="income">Income</option>
+                        <option value="expense">Exepnse</option>
+                    </select>
+                    <div class="form-floating my-3">
+                        <input type="text" class="form-control" id="description-edit" placeholder="Description" />
+                        <label for="description">Description</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="amount-edit" placeholder="0" />
+                        <label for="amount">Amount</label>
+                    </div>
+                    <button class="btn btn-primary w-100 mt-3 " id="confirm-edit" data-bs-dismiss="modal" onclick="">confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

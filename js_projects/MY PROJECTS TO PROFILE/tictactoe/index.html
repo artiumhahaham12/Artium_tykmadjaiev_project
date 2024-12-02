@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game x O</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <h1>TICTACTOE</h1>
+    
+    <div id="place">
+        
+        <div class="place1 place" onclick="tictactoe(0,0)"><img id="place0"></div>
+        <div class="place2 place" onclick="tictactoe(1,0)"><img id="place1"></div>
+        <div class="place3 place" onclick="tictactoe(2,0)"><img id="place2"></div>
+        <div class="place4 place" onclick="tictactoe(3,1)"><img id="place3"></div>
+        <div class="place5 place" onclick="tictactoe(4,1)"><img id="place4"></div>
+        <div class="place6 place" onclick="tictactoe(5,1)"><img id="place5"></div>
+        <div class="place7 place" onclick="tictactoe(6,2)"><img id="place6"></div>
+        <div class="place8 place" onclick="tictactoe(7,2)"><img id="place7"></div>
+        <div class="place9 place" onclick="tictactoe(8,2)"><img id="place8"></div>
+    </div>
+    <button id="next" style="width: 200px;height: 50px;border-radius: 10px;font-size: 1.5rem;margin: 0 auto;display: flex;justify-content: center;align-items: center;background-color: rgb(0, 162, 255);color: white;border: 0;margin-top: 20px;" onclick="next()">Next</button>
+    <div id="win"></div>
+    <script src="tictactoe.js"></script>
+</body>
+</html>

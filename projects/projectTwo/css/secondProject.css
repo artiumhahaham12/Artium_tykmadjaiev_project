@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: varela;
+    direction: rtl;
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    height: 80vh;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 35vh;
+    width: 80vw;
+    text-align: center;
+}
+.container h1{
+    font-family: Satisfy;
+    font-size: 9.5rem;
+    margin-bottom: 10px;
+}
+.container h2{
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+}
+.container p{
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+form{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(5,1fr);
+    align-items: end;
+    gap: 20px;
+    
+
+}
+label{
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.name,.email{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+input{
+
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #ffffff;
+    color: white;
+    height: 50px;
+}
+
+.name{
+    grid-column:1/3 ;
+}
+.email{
+    grid-column: 3/5;
+    margin-right: 17px;
+}
+input[type="submit"]{
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width:992px){
+    .container h1{
+        font-size:6rem; 
+        margin-top: 0px;
+}
+.container h2{
+    font-size: 1.3rem;
+}
+.container p{
+    font-size: 0.8rem;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+.container form input{
+    height: 36px;
+}
+.email,.name,input[type="submit"]{
+    width: 100%;
+}
+}

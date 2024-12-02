@@ -1,0 +1,144 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px;
+    height: 80px;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100vw;
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        height: 10px;
+        li{
+            margin: 0 10px;
+        a{
+            
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    .site-logo{
+        
+        color: black;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        h2{
+            font-size: 1.4rem;
+            margin-top: 16px;
+            &:link{
+                color: #020;
+            }
+        }
+
+        img{
+            align-self: flex-end;
+            margin-right: 10px;
+            
+            border-radius: 50px;
+            height: 50px;
+            
+        }
+    }
+}
+}
+section.heroIndex{
+    background-image: url(/imageFiles/portfolioBanner.jpg);
+    position: relative;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    
+    z-index: 2;
+    
+
+}
+section.heroIndex p,section.heroIndex h1{
+    z-index: 3;
+    font-weight: bold;
+    text-shadow: $headerColor 0 0 2px,$headerColor 0 0 10px,$headerColor 0 0 12px;
+    animation: neon-flicker 11.1s infinite alternate-reverse;
+}
+@keyframes neon-flicker{
+    from{
+        text-shadow: $headerColor 0 0 2px, $headerColor 0 0 10px, $headerColor 0 0 12px;
+    }
+    to{
+        text-shadow: none;
+    }
+}
+.overlay{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.334);
+}
+header .heroIndex h1{
+    display: block;
+    font-size: 2.5rem;
+    color: $heroColor;
+}
+header .heroIndex p{
+    display: block;
+    font-size: $textSize;
+        color: $headerColor;
+
+}
+ul.listOfLanguages{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color:white;
+    width: 100vw;
+    margin: 0 auto;
+    
+}
+.listOfLanguages img{
+    height: 100px;
+    
+}
+.listOfLanguages li{
+    
+    /* padding: 10px 10px 0px; */
+    border-bottom: solid 6px rgb(18, 188, 255);
+}
+ul.listOfLanguages li img[src*=boostrap]{
+    height: 60px;/* the bostrap pic was smaller than the other icons.*/
+}
+.listOfLanguages li:hover{
+    background-color:$bgc2;
+}
+nav .humburger {
+
+    color: #000000;
+
+    a.humburger-item {
+
+        display: none;
+        margin-top: 0;
+        color: #000000;
+    }
+}
+

@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: Assistant;
+  background-color: #E5EEFF;
+}
+
+main {
+  margin-top: 100px;
+  background-color: #E5EEFF;
+  width: 100vw;
+}
+
+ul {
+  font-family: "Assistant";
+  display: grid;
+  grid-template-columns: repeat(4, 296px);
+  grid-template-rows: repeat(6, 270px);
+  gap: 15px;
+  width: 1244px;
+  margin: 0 auto;
+}
+ul li {
+  list-style-type: none;
+}
+ul li img {
+  width: 100%;
+  height: 100%;
+}
+ul li.section {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+ul li.form {
+  grid-row: -4/9;
+  grid-column: 3/5;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 160px);
+    gap: 10px;
+  }
+  .grid .section {
+    width: 100%;
+    grid-row: 1/3;
+    grid-column: 1/3;
+  }
+  .grid .form {
+    grid-row: 7/10;
+    grid-column: 1/3;
+    height: 100%;
+  }
+  .grid .form form {
+    margin-top: 0;
+  }
+  .grid .form p {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  .grid .form h2 {
+    font-size: 1.3rem;
+    margin-top: 0px;
+  }
+  .grid .form form textarea {
+    height: 90px;
+  }
+  .grid .form input[type=submit] {
+    margin-top: 10px;
+  }
+  .grid .form div input {
+    height: 40px;
+  }
+  .grid .section section h1 {
+    font-size: 2.5rem;
+  }
+  .grid .section section p {
+    font-size: 1.5rem;
+  }
+}
+.section {
+  background-color: #020253;
+  width: 100%;
+  height: 100%;
+}
+.section section {
+  margin-top: 32%;
+  text-align: center;
+}
+.section section h1 {
+  font-size: 3.3rem;
+  color: #0EE1DA;
+  font-weight: bold;
+}
+.section section p {
+  color: #F9F9F9;
+  margin-top: 4%;
+}
+
+.form {
+  background-color: #8E097C;
+  padding: 15% 10%;
+  text-align: center;
+  height: 840px;
+}
+.form h2 {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+.form p {
+  color: #F9F9F9;
+  margin-top: 3%;
+}
+.form form {
+  font-family: Heebo;
+  width: 100%;
+  text-align: right;
+  margin-top: 50px;
+}
+.form form div {
+  margin-top: 30PX;
+  display: flex;
+  flex-direction: column;
+}
+.form form div label {
+  color: #0EE1DA;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.form form div input {
+  height: 50px;
+  border: 0;
+  border-bottom: #0EE1DA solid 4px;
+}
+.form form div textarea {
+  height: 200px;
+  border: 0;
+  border-bottom: #0EE1DA solid 4px;
+}
+.form form input[type=submit] {
+  color: #011560;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #0EE1DA;
+  width: 100%;
+  height: 50px;
+  border: 0;
+  margin-top: 20px;
+}/*# sourceMappingURL=fourProject.css.map */
